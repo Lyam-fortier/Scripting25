@@ -1,0 +1,59 @@
+header {
+    background-color: blueviolet;
+
+}
+
+#Magic {
+    background-color: rgb(6, 138, 120);
+}
+
+#Bonkers {
+    background-color: rgb(78, 51, 199);
+}
+
+#I_AM_A_WIZARD {
+    background-color: rgb(6, 138, 120);
+}
+
+#Gorillaz_is_a_banger {
+    background-color: rgb(79, 51, 199);
+}
+
+#daddy {
+    background-color: rgb(85, 34, 179);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(78, 80, 187);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(101, 230, 16);
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #12bdc9;
+    color: rgb(62, 136, 13);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
