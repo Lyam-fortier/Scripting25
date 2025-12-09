@@ -1,0 +1,36 @@
+.btn {
+  border-radius: 50px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.64);
+}
+.customHeight {
+  height: 40vh;
+}
+header {
+  background-color: #a068d4;
+}
+#life {
+  background-color: rgb(153, 80, 221);
+}
+#head_truama {
+  background-color: rgb(101, 28, 170);
+  border-radius: 25px;
+}
+#Fracture {
+  background-color: rgb(119, 27, 206);
+  border-radius: 25px;
+}
+#Story1 {
+  background-color: rgb(82, 12, 148);
+}
+#Story2 {
+  background-color: rgb(74, 28, 117);
+}
+#skull_crusher {
+  text-decoration-color: rgb(44, 1, 85);
+}
+#spine_crusher {
+  text-decoration-color: rgb(44, 1, 85);
+}
+footer {
+  background-color: rgb(63, 1, 121);
+}

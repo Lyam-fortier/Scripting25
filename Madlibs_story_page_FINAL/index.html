@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Intro to Javascript</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/formJsStyle.css" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!---------------------Masthead----------------------->
+    <header id="tops">
+      <div class="container">
+        <div class="row align-items-center customHeight">
+          <div
+            class="col-sm-6 text-white bg-dark mx-auto p-5 rounded shadow-lg"
+          >
+            <h1>Forms & Javascript</h1>
+            <p>Handling User Input and Events</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!---------------------Main Body Content----------------------->
+    <section>
+      <div class="container py-5">
+        <!------------Row for the Form----------------------->
+        <div class="row my-5 p-3">
+          <div class="col-sm-8 mx-auto p-5 formCol">
+            <h2 class="text-uppercase text-secondary">
+              <strong>Hello & Welcome</strong>
+            </h2>
+            <p>Please fill out the following form</p>
+
+            <!--Form Goes Here-->
+            <!--The HTML <form> element is used to create an HTML form for user input-->
+            <!--One of the most used form element is the <input> element. This creates an input into which the user can enter information-->
+            <!--The 'type' attribute will change the way the input looks-->
+            <form action="javascript:write();">
+              <div class="my-3">
+                <label for="fname" class="form-label">first Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  placeholder="Enter Your First Name"
+                  name="fname"
+                />
+              </div>
+              <!--make sext imput favorite animal-->
+              <div class="my-3">
+                <label for="fania" class="form-label">favorite animal:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fania"
+                  placeholder="Enter Your Favorite Animal"
+                  name="fania"
+                />
+              </div>
+              <div class="my-3">
+                <p>whats your most hated weather condtion?</p>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="snow"
+                    name="Condtion"
+                    value="snow"
+                  />
+                  <label class="form-check-label" for="snow"
+                    >Snow apcolypse</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="wet"
+                    name="Condtion"
+                    value="wet"
+                  />
+                  <label class="form-check-label" for="wet">The storms</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="burning"
+                    name="Condtion"
+                    value="burning"
+                  />
+                  <label class="form-check-label" for="burning">the SUN</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="nice"
+                    name="Condtion"
+                    value="nice"
+                  />
+                  <label class="form-check-label" for="nice"
+                    >Actually nice weather</label
+                  >
+                </div>
+              </div>
+              <div class="d-grid mt-5">
+                <button type="submit" class="btn btn-dark btn-block">
+                  Genreate Story
+                </button>
+              </div>
+            </form>
+            <!--The <label> element defines a label for several form elements. -->
+            <!--Then we will use a button to trigger our Javascript code!-->
+          </div>
+        </div>
+
+        <!----------Row for the Output----------------------->
+        <div class="row">
+          <div
+            id="output"
+            class="col-sm-6 mx-auto bg-secondary p-5 rounded text-white"
+          >
+            <h2>Output will go here!</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------Footer----------------------->
+    <footer class="bg-dark">
+      <div class="container text-white text-center p-5 mt-5">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p>Story Builder</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------------Your Custom Javascript----------------------->
+    <script src="js/formHandler.js"></script>
+  </body>
+</html>
